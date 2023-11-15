@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="d-flex flex-column">
@@ -24,10 +25,10 @@
                 <a class="nav-link" href="./index.html">Homepage</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./paginas/novedades.html">Novedades</a>
+                <a class="nav-link" href="./paginas/catalogo.html">Catálogo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Catálogo</a>
+                <a class="nav-link" href="#">Novedades</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,6 +45,11 @@
               </li>
             </ul>
           </div>
+
+            <a href="https://wa.me/542615655653" class="btn-wsp" target="_blank">
+              <i class="fa fa-whatsapp icono"></i>
+            </a>
+
         </div>
     </nav>
 
@@ -55,18 +61,14 @@
             <h1>Tus plantas de interior favoritas</h1>
             <h2>Ahora en la ciudad de Mendoza</h2>
         </section>
-        <div class="custom-shape-divider-bottom-1698097613">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
+
 
     </header>
 
     <main>
 
-        <section>
-            <div class="container carrusel rounded-5">
+        <section class="container">
+            <div class="carrusel rounded-5">
                 <div class="row justify-content-center">
                     <div id="carouselExampleAutoplaying" class="carousel slide col-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -187,8 +189,6 @@
         </section>
 
         <section>
-            
-            <section>
                 <div class="opinionesfondo">
                     <div class="container">
                         <h2 class="tituloopiniones">Las plantas mas vendidas en nuestra tienda</h2>
@@ -276,12 +276,13 @@
                                         </ul>
 
                                         <div class="d-grid gap-2 col-6 mx-auto">
-                                            <button class="btn btn-success" type="button">Avisarme cuando haya stock</button>
+                                          <button type="button" class="btn btn-md btn-danger" data-bs-toggle="popover" data-bs-title="No disponible" data-bs-content="No hay stock disponible de la planta que estás queriendo comprar, te sugerimos que veas nuestro catálogo para ver otras opciones.">Avisarme cuando haya stock</button>
+
                                     </div>
                             </div>
                     </div>
                 </div>
-            </section>
+        </section>
 
     </main>
 
@@ -309,10 +310,10 @@
                 <a href="./index.html" class="text-dark"></i>Homepage</a> 
               </li>
               <li class="mb-2">
-                <a href="./paginas/novedades.html" class="text-dark"></i>Novedades</a>
+                <a href="./paginas/catalogo.html" class="text-dark"></i>Catálogo</a>
               </li>
               <li class="mb-2">
-                <a href="#!" class="text-dark"></i>Catálogo</a>
+                <a href="#" class="text-dark"></i>Novedades</a>
               </li>
               <li class="mb-2">
                 <a href="#!" class="text-dark"></i>Sucursales</a>
@@ -347,5 +348,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
 </body>
 </html>
